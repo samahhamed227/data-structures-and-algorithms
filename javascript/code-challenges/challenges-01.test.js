@@ -75,10 +75,14 @@ const greeting = (word) => {
 };
 
 const speaker = (words, callback) => {
-  // Solution code here...
   
-};
+  let arr1 = [];
+  words.forEach(element => {
+    arr1.push(callback(element));
+  });
 
+  return arr1;
+};
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
 
@@ -96,11 +100,14 @@ Return the modified array.
 ------------------------------------------------------------------------------------------------ */
 
 const addValues = (arr, value) => {
-  // Solution code here...
+  arr.push(value);
 };
 
-const addNumbers = (num, arr, times, callback) => {
-  // Solution code here...
+const addNumbers = (numbers, arr, times, callback) => {
+  for (let i = 1; i <= times; i++) {
+    callback(arr, numbers)
+  }
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -121,8 +128,17 @@ The inventory is formatted like this:
 This function should use forEach to populate your grocery list based on the store's inventory. If the item is available, add it to your list. Return the final list.
 ------------------------------------------------------------------------------------------------ */
 
+
+
 const createList = (availableItems) => {
-  // Solution code here...
+   
+  let arr = [];
+  availableItems.forEach(item => {
+    if (item.available === true) {
+      arr.push(item.name);
+    }
+  });
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
