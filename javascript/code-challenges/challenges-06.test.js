@@ -24,15 +24,13 @@ Returns: ['dyoll', 'eimaj'];
 
 const getNames = (arr) => {
   // Solution code here...
-   
-  let arr1 = arr.map(element=>{
-    
-    let arr2= [...element.name]
-     let sum = arr2.reduce((accumulator, currentValue) => currentValue + accumulator , '');
-     return sum
-   })
+  let newArray=arr.map(item=>{
+    let names=[...item.name]
  
-   return arr1 
+    let namesRevese=names.reduce((accumulator, currentValue) => currentValue + accumulator , '');
+    return namesRevese;
+  })
+   return newArray; 
 };
 
 /* ------------------------------------------------------------------------------------------------
