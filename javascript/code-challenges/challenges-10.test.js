@@ -8,8 +8,9 @@ Write a function named returnTen, takes in a string and uses split and splice to
 ------------------------------------------------------------------------------------------------ */
 
 function returnTen(str){
-  // Solution code here...
+  
   return str.split('').slice(-10);
+
 }
 
 /* ------------------------------------------------------------------------------------------------
@@ -88,7 +89,6 @@ const alkiBeach = [33, 31, 147, 130, 27, 93, 38, 126, 141, 63, 46, 17];
 const cookieStores = [firstPike, seaTac, seattleCenter, capHill, alkiBeach];
 
 const grandTotal = (stores) => {
-  // Solution code here...
 
   let sumCol;
   let newArr = [];
@@ -142,7 +142,6 @@ const errands = [
 ];
 
 const howManyTreats = (arr) => {
-  // Solution code here...
   return arr[2].items[1].quantity;
 };
 
