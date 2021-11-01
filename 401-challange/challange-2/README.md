@@ -3,7 +3,7 @@ Write a function called insertShiftArray which takes in an array and a value to 
 Input [5,2,9,7,4], 5
 Output [5,2,9,5,7,4]
 
-![](challange-2/challange2.png)
+![](challange2.png)
 
 
 # Approach & Efficiency
