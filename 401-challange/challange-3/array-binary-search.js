@@ -1,22 +1,22 @@
 'use strict';
 
 let arr = [5,7,2,8,4];
-let value = 2;
-
 function BinarySearch (arr,value) {
      let first = 0;
      let last = arr.length - 1;
+     let middle=0;
      while(first <= last){
-          let middle = Math.ceil((first+last)/2);
-          if(arr[middle] === value){
-                return value;
+           middle = Math.floor((first+last)/2);
+          if(arr[middle] > value){
+                last = middle - 1;
+             
           }else if(arr[middle] < value){ 
-                  return first = middle + 1;
+                   first = middle + 1;
            }else{
-                  return last = middle - 1;
+               return middle;
            }
       }
      return -1;
+    
 }
-BinarySearch (arr,2)
-
+BinarySearch (arr,12)
