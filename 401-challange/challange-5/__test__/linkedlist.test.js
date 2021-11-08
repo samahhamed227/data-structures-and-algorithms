@@ -1,6 +1,5 @@
 'use strict';
 
-const LinkedList= require('../linkedlist');
 const Node = require('../node')
 
 
@@ -32,5 +31,5 @@ describe('Linked List', ()=>{
         expect(searchValue).toBeTruthy();
         expect(!searchValue).toBeFalsy()
     });
-    
+
 })
