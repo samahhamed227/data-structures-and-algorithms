@@ -9,7 +9,7 @@ class LinkedList {
   constructor() {
     this.head = null
   }
-  append(item) {
+  insert(item) {
     const newNode = new Node(item)
     if (!this.head) {
       this.head = newNode
@@ -58,10 +58,10 @@ class LinkedList {
 }
 const list = new LinkedList()
 
-  list.append(1)
-  list.append(2)
-  list.append(3)
-  list.append(4)
+  list.insert(1)
+  list.insert(2)
+  list.insert(3)
+  list.insert(4)
   // list.printing()
   let c = list.toString();
   console.log(c);
