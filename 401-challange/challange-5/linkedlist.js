@@ -1,14 +1,11 @@
 'use strict';
 
-<<<<<<< linked-list-zip
-=======
 class Node {
     constructor(value){
         this.value = value;
         this.next = null
     }
 }
->>>>>>> local
 
 class LinkedList {
     constructor() {
