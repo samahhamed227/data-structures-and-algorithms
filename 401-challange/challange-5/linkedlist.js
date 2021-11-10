@@ -1,5 +1,14 @@
 'use strict';
 
+<<<<<<< linked-list-zip
+=======
+class Node {
+    constructor(value){
+        this.value = value;
+        this.next = null
+    }
+}
+>>>>>>> local
 
 class LinkedList {
     constructor() {
@@ -50,6 +59,18 @@ class LinkedList {
         return strRes;
     }
 }
+
+let link = new LinkedList();
+link.insert(1);
+link.insert(2);
+link.insert(3);
+link.insert(4);
+
+console.log(link);
+console.log(link.includes(3));
+console.log(link.toString());
+
+
 
 
 module.exports = LinkedList;
