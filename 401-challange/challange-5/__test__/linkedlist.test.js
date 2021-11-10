@@ -1,6 +1,12 @@
 'use strict';
 
+<<<<<<< linked-list-zip
 const Node = require('../node')
+=======
+const LinkedList= require('../linkedlist');
+const Node = require('../linkedlist');
+
+>>>>>>> local
 
 
 describe('Linked List', ()=>{
@@ -31,5 +37,18 @@ describe('Linked List', ()=>{
         expect(searchValue).toBeTruthy();
         expect(!searchValue).toBeFalsy()
     });
+<<<<<<< linked-list-zip
 
+=======
+    it('should check if a new node is created', ()=>{
+        // arrange
+        let value = 'new node value';
+        //act
+        let node = new Node(value);
+        //assert
+        expect(node.value).toEqual(value);
+        expect(node.next).toBeNull();
+    });
+    
+>>>>>>> local
 })
