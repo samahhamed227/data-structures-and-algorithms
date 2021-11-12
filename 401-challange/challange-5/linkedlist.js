@@ -1,6 +1,12 @@
 'use strict';
 
-const Node = require('./node');
+
+class Node {
+    constructor(value){
+        this.value = value;
+        this.next = null
+    }
+}
 class LinkedList {
     constructor() {
         this.head = null;
@@ -9,26 +15,24 @@ class LinkedList {
     insert(value) {
         const node = new Node(value);
         //it will be excuted one time at creating new linked list
-        if (!this.head) {
+        if (this.head==null) {
             this.head = node;
-            return this;
+
+        }else{
+          node.next=this.head;
+          this.head=node;
         }
 
-        // if there is a node existed in the linked list
-        let current = this.head;
-        while (current.next) { current = current.next; }
-        current.next = node;
-
-        return this;
+   
     }
    
     includes(value) {
         let currentNode = this.head;
         let result ;
         while (currentNode.next) {
-          
             if (currentNode.value == value) {
-                result = true;
+            return true ;
+          
             } else {
                 result= false;
             }
@@ -50,6 +54,8 @@ class LinkedList {
         return strRes;
     }
 }
+
+
 
 
 module.exports = LinkedList;

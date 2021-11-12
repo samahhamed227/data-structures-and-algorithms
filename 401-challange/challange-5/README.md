@@ -19,11 +19,11 @@ insert,includes,to string
 - Creating the linkedlist and node class including the methods then testing the result 
 
 - Big O 
-   - Time <--- O(2)
+   - Time <--- O(n)
    - Space <----- O(1)
 
 # Test :
-![](ch55.PNG)
+![](challange-5-test'.PNG)
 
 ## API
 <!-- Description of each method publicly available to your Linked List -->
