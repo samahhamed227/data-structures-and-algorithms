@@ -6,13 +6,16 @@
 ## Challenge
 <!-- Description of the challenge -->
 - Create a Node class that has properties for the value stored in the Node, and a pointer to the next Node.
+
 -Create a Linked List class include a head property.
+
 - The class should contain the following methods
 insert,includes,to string
 
 ### Whiteboard Process
 
 ![image](challange-5.png)
+
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
@@ -22,8 +25,9 @@ insert,includes,to string
    - Time <--- O(n)
    - Space <----- O(1)
 
+
 # Test :
-![](challange-5-test'.PNG)
+![image](challange-5-test'.PNG)
 
 ## API
 <!-- Description of each method publicly available to your Linked List -->
