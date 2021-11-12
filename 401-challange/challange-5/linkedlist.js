@@ -54,8 +54,4 @@ class LinkedList {
         return strRes;
     }
 }
-
-
-
-
 module.exports = LinkedList;
