@@ -22,8 +22,6 @@ class LinkedList {
           node.next=this.head;
           this.head=node;
         }
-
-   
     }
    
     includes(value) {
