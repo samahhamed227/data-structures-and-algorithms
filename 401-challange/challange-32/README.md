@@ -5,6 +5,9 @@ Find all values found to be in 2 binary trees
 
 Write a function called tree intersection Arguments: two binary trees Return: array
 
+# Test
+![](hash.PNG) 
+
 ## Approach & Efficiency
 - Big O Time <--- O(n) 
 - Space <----- O(1)
@@ -12,5 +15,3 @@ Write a function called tree intersection Arguments: two binary trees Return: ar
 # Whiteboard Process
 ![](treeIntersection.png)
 
-# Test
-![](hash.PNG)
